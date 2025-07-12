@@ -2,16 +2,51 @@
 <html lang="en-us">
     <head>
         <meta charset="UTF-8" />
+        <meta http-equiv="pragma" content="cache">
+        <meta http-equiv="expires" content="Fri, 04 Apr 2026 23:59:59 GMT">
+        <meta http-equiv="author" content="lamuaye lamua">
+        <meta name="description" content="
+            hello there this is a trial aot website created by your friendly 
+            noob programmer lames. so feel at home and have i good time.
+        ">
+        <meta name="keywords" content="lames, lahm, yoo, what!">
+        <meta name="robots" content="nofollow">
         <title>sign-up for AOTs blog</title>
+        <link rel="stylesheet" href="../../../css and styling info/forms/sign_up.css" type="text/css">
     </head>
     <body>
-        <div class="userSignUpForm">
-            <form id="signUpForm" action="" >
-
+        <div class="signUpForm">
+            <form id="signUpForm" action="./emailConfirmation.html" >
+                <h1 id="formHeader" >
+                    Register Now
+                </h1>
+                <label for="firstName">First Name:</label>
+                <input id="firstName" type="text" placeholder="enter your name here" name="firstName" value="" required="required">
+                
+                <label for="lastName">Last Name:</label>
+                <input id="lastName" type="text" placeholder="please enter your last name here" name="lastName" value="" required="required"><br>
+                
+                <label for="dateOfBirth">Date Of Birth:</label><br>
+                <input id="dateOfBirth" type="date" placeholder="09122025" name="dateOfBirth" required="required"><br>
+                
+                <label for="email">Email:</label><br>
+                <input id="email" type="email" placeholder="example@mail.com" name="email" value="" required="required"><br>
+                
+                <label for="password">Password:</label><br>
+                <input id="password" type="password" name="password" value="" required="required" required="required"><br>
+                
+                <label for="confirmPassword">Confirm Password:</label><br>
+                <input id="confirmPassword" type="password" name="password" value="" required="required" required="required"><br>
+                
+                <input id="agreeToEmail" type="checkbox" name="agreedToGetEmail" required="required" required="required">
+                    <label for="agreeToEmail">I agree to recieve informational email </label><br>
+                <input id="agreeToPolicy" type="checkbox" name="agreedToPolicies" value="checked" required="required">
+                    <label for="agreeToPolicy">I agree to the privacy policy exercised by the organization</label><br>
+                <input id="submitButton" type="submit" name="Sign Up" value="signUp">
             </form>
         </div>
-        <div class="signUpConfirmation">
-            
-        </div>
     </body>
+    <footer>
+
+    </footer>
 </html>
