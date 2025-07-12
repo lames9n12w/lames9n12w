@@ -1,0 +1,23 @@
+
+#firstName {
+    color: rgb(236, 9, 73);
+}
+#lastName {
+    color: rgb(236, 9, 73);
+}
+.signUpForm {
+    color: green;
+}
+* {
+    color: rgb(238, 16, 120);
+}
+form>h1 {
+    color: black;
+}
+form input {
+    color: green;
+}
+form label {
+    color: purple;
+}
+
