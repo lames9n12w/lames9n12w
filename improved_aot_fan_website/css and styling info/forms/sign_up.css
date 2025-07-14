@@ -1,15 +1,25 @@
 
-#firstName {
+#firstName {    /* this is not applied*/
     color: rgb(236, 9, 73);
 }
-#lastName {
+#lastName {     /* this also is not applied*/
     color: rgb(236, 9, 73);
 }
-.signUpForm {
+.signUpForm {   /*suppressed by something ilusive*/
     color: green;
 }
-* {
+* {     
     color: rgb(238, 16, 120);
+    line-height: 200%; 
+    text-align: center; /*applied*/
+    vertical-align:middle ;
+}
+p {
+    word-spacing: 300%; /*why does this not apply?*/
+    text-align: left;
+}
+p::first-line {
+    text-indent: 30px; /*not applying*/
 }
 form>h1 {
     color: black;
@@ -20,4 +30,40 @@ form input {
 form label {
     color: purple;
 }
+#formHeader {
+    color: rgb(148, 200, 218);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: capitalize;
+    text-decoration: dashed; /* also not applied*/
+    text-indent: 0%;
+    text-shadow: -6px 6px 6px black;
+}
+div.newsLetterForm {
+    text-transform: capitalize;
+    font-family:'Courier New', Courier, monospace;
+    color: blue;
+}
+h2 {
+    color: rgb(97, 173, 231);
+}
+*:link {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 110%;
+    color: aqua;
+}
+*:visited {
+    color: darkblue;
+}
 
+a:hover {
+    background-color: rgb(162, 189, 233);
+}
+form>#submitButton:hover {
+    color: rgb(195, 214, 142);
+    background-color: rgb(89, 112, 115);
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 160%;
+    word-spacing: 4px;
+    size: 160%;
+}
