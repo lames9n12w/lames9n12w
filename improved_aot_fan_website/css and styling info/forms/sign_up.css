@@ -13,10 +13,13 @@
     line-height: 200%; 
     text-align: center; /*applied*/
     vertical-align:middle ;
+    
 }
 p {
     word-spacing: 300%; /*why does this not apply?*/
     text-align: left;
+    width: 30%;
+    height: 30%;
 }
 p::first-line {
     text-indent: 30px; /*not applying*/
@@ -45,6 +48,10 @@ div.newsLetterForm {
 }
 h2 {
     color: rgb(97, 173, 231);
+    height: 5em;
+    width:  12em;
+    background-color: rgb(210, 126, 15);
+    align-self : center;
 }
 *:link {
     font-family: Arial, Helvetica, sans-serif;
