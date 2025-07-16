@@ -18,6 +18,7 @@
     line-height: 200%; 
     text-align: center; /*applied*/
     vertical-align:middle ;
+    background-color: rgb(62, 60, 77);
 }
 p {
     word-spacing: 300%; /*why does this not apply?*/
@@ -91,7 +92,7 @@ input[type*="submit"]:hover{
     box-shadow: -1px 1px .5px black;
 }
 input[type*="submit"]:active {
-        background-color: rgb(2, 211, 183);
+        background-color: rgb(2, 166, 144);
         color: blue;
         box-shadow: -3px 3px 1.5px 2px rgb(0, 0, 0);
 }
