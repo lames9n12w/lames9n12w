@@ -9,10 +9,12 @@
     color: green;
 }
 * {     
-    color: rgb(238, 16, 120);
+    border: 3px dotted darkblue;
+    color: rgb(248, 207, 226);
     line-height: 200%; 
     text-align: center; /*applied*/
     vertical-align:middle ;
+    background-color: rgb(151, 133, 33);
 }
 p {
     word-spacing: 300%; /*why does this not apply?*/
@@ -25,10 +27,12 @@ form>h1 {
     color: black;
 }
 form input {
-    color: green;
+    color: rgb(123, 160, 230);
+    background-color: rgb(29, 81, 128);
 }
 form label {
-    color: purple;
+    color: rgb(132, 241, 255);
+    background-color: rgb(24, 79, 143);
 }
 #formHeader {
     color: rgb(148, 200, 218);
@@ -36,7 +40,9 @@ form label {
     text-transform: capitalize;
     text-decoration: dashed; /* also not applied*/
     text-indent: 0%;
-    text-shadow: -6px 6px 6px black;
+    /*text-shadow: -6px 6px 6px black;*/
+    width: 15em;
+    background-color: brown;
 }
 div.newsLetterForm {
     text-transform: capitalize;
