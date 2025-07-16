@@ -9,17 +9,22 @@
     color: green;
 }
 * {     
-    color: rgb(238, 16, 120);
+    margin: 5px;
+    border-width: 3px 5px;
+    border-style: dashed;
+    border-color: rgb(59, 21, 21);
+    border-radius: 3%;
+    color: rgb(248, 207, 226);
     line-height: 200%; 
     text-align: center; /*applied*/
     vertical-align:middle ;
-    
 }
 p {
     word-spacing: 300%; /*why does this not apply?*/
     text-align: left;
     width: 30%;
     height: 30%;
+    background-color: rgb(151, 133, 33);
 }
 p::first-line {
     text-indent: 30px; /*not applying*/
@@ -28,18 +33,25 @@ form>h1 {
     color: black;
 }
 form input {
-    color: green;
+    color: rgb(123, 160, 230);
+    background-color: rgb(29, 81, 128);
+    border-width: 1px;
+    border-radius: 10%;
+    border-style: solid;
 }
 form label {
-    color: purple;
+    color: rgb(132, 241, 255);
+    background-color: rgb(24, 79, 143);
 }
 #formHeader {
+    margin: 10px auto;
     color: rgb(148, 200, 218);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-transform: capitalize;
     text-decoration: dashed; /* also not applied*/
     text-indent: 0%;
-    text-shadow: -6px 6px 6px black;
+    width: 15em;
+    background-color: brown;
 }
 div.newsLetterForm {
     text-transform: capitalize;
@@ -65,12 +77,21 @@ h2 {
 a:hover {
     background-color: rgb(162, 189, 233);
 }
-form>#submitButton:hover {
-    color: rgb(195, 214, 142);
-    background-color: rgb(89, 112, 115);
-    font-weight: bold;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 160%;
-    word-spacing: 4px;
-    size: 160%;
+
+input[type="submit"] {
+    color: blue;
+    background-color: rgba(240, 139, 99, 0.87);
+    font-family: cursive;
+    text-decoration: dashed;
+    text-transform: capitalize;
+}
+input[type*="submit"]:hover{
+    background-color: rgb(62, 207, 188);
+    color: brown;
+    box-shadow: -1px 1px .5px black;
+}
+input[type*="submit"]:active {
+        background-color: rgb(2, 211, 183);
+        color: blue;
+        box-shadow: -3px 3px 1.5px 2px rgb(0, 0, 0);
 }
