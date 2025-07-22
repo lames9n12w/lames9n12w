@@ -1,92 +1,59 @@
 
-#firstName {    /* this is not applied*/
-    color: rgb(236, 9, 73);
+.signUpForm {
+    text-transform: capitalize;
+    margin: 10px auto;
+    text-align: left;
+    padding: 10px;
 }
-#lastName {     /* this also is not applied*/
-    color: rgb(236, 9, 73);
-}
-.signUpForm {   /*suppressed by something ilusive*/
-    color: green;
-}
-* {     
-    margin: 5px;
-    border-width: 3px 5px;
-    border-style: dashed;
-    border-color: rgb(59, 21, 21);
-    border-radius: 3%;
-    color: rgb(248, 207, 226);
-    line-height: 200%; 
-    text-align: center; /*applied*/
-    vertical-align:middle ;
-    background-color: rgb(151, 133, 33);
-}
-p {
-    word-spacing: 300%; /*why does this not apply?*/
-    text-align: center;
-}
-p::first-line {
-    text-indent: 30px; /*not applying*/
-}
-form>h1 {
-    color: black;
-}
-form input {
-    color: rgb(123, 160, 230);
-    background-color: rgb(29, 81, 128);
-    border-width: 1px;
-    border-radius: 10%;
-    border-style: solid;
-}
-form label {
-    color: rgb(132, 241, 255);
-    background-color: rgb(24, 79, 143);
+#signUpForm {
+    position:relative;
+    top: 70px;
+    padding: 10px;
+    margin: 10px auto;
+    background-color: lightgray;
+    width: 500px;
+    font-size: 16px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 #formHeader {
-    margin: 10px auto;
-    color: rgb(148, 200, 218);
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-transform: capitalize;
-    text-decoration: dashed; /* also not applied*/
-    text-indent: 0%;
-    /*text-shadow: -6px 6px 6px black;*/
-    width: 15em;
-    background-color: brown;
+    font-size: 20px;
 }
-div.newsLetterForm {
-    text-transform: capitalize;
-    font-family:'Courier New', Courier, monospace;
-    color: blue;
+.signUpForm input {
+    width: 70%;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px;
+    padding: 10px;
 }
-h2 {
-    color: rgb(97, 173, 231);
+.signUpForm input[type="date"] {
+    width: 50%;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px;
 }
-*:link {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 110%;
-    color: aqua;
+#signUpForm>input[type="checkbox*"] {
+    text-align: center;
 }
-*:visited {
-    color: darkblue;
+#signUpForm>input[type="submit"] {
+    text-align: center;
+    width: 30%;
+    padding: 12px;
 }
+.newsLetterForm {
 
-a:hover {
-    background-color: rgb(162, 189, 233);
 }
+#newsLetterHeading {
 
-input[type="submit"] {
-    color: blue;
-    background-color: rgba(240, 139, 99, 0.87);
-    font-family: cursive;
-    text-decoration: dashed;
-    text-transform: capitalize;
 }
-input[type*="submit"]:hover{
-    background-color: rgb(62, 207, 188);
-    color: brown;
-    box-shadow: -1px 1px .5px black;
+.newsLetterForm label {
+
 }
-input[type*="submit"]:active {
-        background-color: rgb(2, 211, 183);
-        color: blue;
-        box-shadow: -3px 3px 1.5px 2px rgb(0, 0, 0);
+.newsLetterForm p {
+
+}
+footer {
+
+}
+footer p {
+
 }
