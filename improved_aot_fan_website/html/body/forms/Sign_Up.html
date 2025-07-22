@@ -15,38 +15,52 @@
         <link rel="stylesheet" href="../../../css and styling info/forms/sign_up.css" type="text/css">
     </head>
     <body>
-        <div class="signUpForm">
-            <p id="dummyParagraph">
-                heloo woorld! i'm so glad to have youi heire. <br>
-                why youi stiel heire thoughh? ia beiyn lookin fer youi all deie.
-            </p>
+        <div class="header">
+            <nav class="headerWrapper">
+                <ul class="links">
+                        <li> <a href="#">history</a> </li>
+                        <li> <a href="#">characters</a> </li>
+                        <li> <a href="#">theories</a> </li>
+                        <li> <a href="#">people</a> </li>
+                        <li> <a href="#">about</a> </li>
+                </ul>
+            </nav>
+        </div>
+        <p id="introParagraph">
+
+        </p>
+        <div class="signUpFormWrapper">
             <form id="signUpForm" action="./emailConfirmation.html" >
                 <h1 id="formHeader" >
-                    register now
+                    sign-up
                 </h1>
-                <label for="firstName">First Name:</label>
-                <input id="firstName" type="text" placeholder="enter your name here" name="firstName" value="" required="required">
+                <label for="firstName">First Name</label><br>
+                <input id="firstName" type="text" name="firstName" value="" required="required">
+                <br>
+                <label for="lastName">Last Name</label><br>
+                <input id="lastName" type="text" name="lastName" value="" required="required"><br>
                 
-                <label for="lastName">Last Name:</label>
-                <input id="lastName" type="text" placeholder="please enter your last name here" name="lastName" value="" required="required"><br>
+                <label for="dateOfBirth">Date Of Birth</label><br>
+                <input id="dateOfBirth" type="date" name="dateOfBirth" required="required"><br>
                 
-                <label for="dateOfBirth">Date Of Birth:</label><br>
-                <input id="dateOfBirth" type="date" placeholder="09122025" name="dateOfBirth" required="required"><br>
+                <label for="email">Email</label><br>
+                <input id="email" type="email" name="email" value="" required="required"><br>
                 
-                <label for="email">Email:</label><br>
-                <input id="email" type="email" placeholder="example@mail.com" name="email" value="" required="required"><br>
-                
-                <label for="password">Password:</label><br>
+                <label for="password">Password</label><br>
                 <input id="password" type="password" name="password" value="" required="required" required="required"><br>
                 
-                <label for="confirmPassword">Confirm Password:</label><br>
+                <label for="confirmPassword">Confirm Password</label><br>
                 <input id="confirmPassword" type="password" name="password" value="" required="required" required="required"><br>
-                
+            </form>
+            
+        </div>
+        <div class="policyAgreements">
+            <form id="policyAgreement" action="">
                 <input id="agreeToEmail" type="checkbox" name="agreedToGetEmail" required="required" required="required">
                 <label for="agreeToEmail">I agree to recieve informational email </label><br>
                 <input id="agreeToPolicy" type="checkbox" name="agreedToPolicies" value="checked" required="required">
                 <label for="agreeToPolicy">I agree to the privacy policy exercised by the organization</label><br>
-                <input id="submitButton" type="submit" name="Sign Up" value="Sign Up">
+                <button id="submitButton" name="Sign Up" value="Sign Up">sign-up</button><br>
             </form>
         </div>
         <div class="newsLetterForm">
@@ -55,22 +69,21 @@
             </h2>
             <form id="newsLetter" action="">
                 <label for="newsLetterEmail">
-                    please enter your email
-                </label><br>
+                    please enter your email here
+                </label>
                 <input type="text" name="email""><br>
-                <input type="submit" name="submitEmail" id="newsLetterEmail"><br>
+                <button name="submitEmail" id="newsLetterEmail">submitButton</button>
+                <!-- <input type="submit" name="submitEmail" id="newsLetterEmail"><br> -->
             </form>
-            <p> 
-                if you wanna checkout the news-vlog first,  
-                <a href="">here</a>
-                is the link to it.
-            </p>
+            
             
         </div>
     </body>
     <footer>
-        <p style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;text-transform:capitalize;">
-            i'm just a footer.
+        <p id="footerParagraph">
+                if you wanna checkout the news-vlog first,  
+                <a href="">here</a>
+                is the link to it.
         </p>
     </footer>
 </html>

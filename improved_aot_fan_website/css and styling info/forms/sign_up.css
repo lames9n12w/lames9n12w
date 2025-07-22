@@ -1,98 +1,138 @@
+nav {
+    text-align: center;
+}
 
-#firstName {    /* this is not applied*/
-    color: rgb(236, 9, 73);
+.links {
+    display: inline;
+    list-style-type: none;
+    padding: 0;
 }
-#lastName {     /* this also is not applied*/
-    color: rgb(236, 9, 73);
+
+.links li {
+    margin: 10px 0;
 }
-.signUpForm {   /*suppressed by something ilusive*/
-    color: green;
+
+.links li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2em;
 }
-* {     
-    margin: 5px;
-    border-width: 3px 5px;
-    border-style: dashed;
-    border-color: rgb(59, 21, 21);
-    border-radius: 3%;
-    color: rgb(248, 207, 226);
-    line-height: 200%; 
-    text-align: center; /*applied*/
-    vertical-align:middle ;
-    background-color: rgb(62, 60, 77);
+
+.links li a:hover {
+    color: #4CAF50; /* soft green */
 }
-p {
-    word-spacing: 300%; /*why does this not apply?*/
-    text-align: left;
-    width: 30%;
-    height: 30%;
-    background-color: rgb(151, 133, 33);
+.signUpFormWrapper {
+    height: fit-content;
+    width: 500px;
+    margin: 0 auto;
+    float: none;
+    padding: 5px;
 }
-p::first-line {
-    text-indent: 30px; /*not applying*/
-}
-form>h1 {
-    color: black;
-}
-form input {
-    color: rgb(123, 160, 230);
-    background-color: rgb(29, 81, 128);
-    border-width: 1px;
+#signUpForm {
+    background-color: white;
+    padding: 20px 20px 20px 20px;
+    margin: 10px;
+    font-size: 16px;
+    border: .5px solid gray;
     border-radius: 10%;
-    border-style: solid;
-}
-form label {
-    color: rgb(132, 241, 255);
-    background-color: rgb(24, 79, 143);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 #formHeader {
+    width: fit-content;
+    margin: 5px auto;
+    color: black;
+    background-color: inherit;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: bold;
+}
+#signUpForm>label {
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+#signUpForm>input {
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 10px;
+    font-size: 20px;
+    padding: 10px 10px 10px 10px;
+    text-transform: none;
+    border-color: lightgray;
+    border-style: ;
+    border-radius: 3% / 15%;
+    width: 70%;
+}
+form[id="policyAgreements"] {
+    margin: 10px;
+    padding: 15px;
+}
+form[id="policyAgreements"]>label {
+    position: static;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 18px 10px 18px 10px;
+    font-size: 18px;
+}
+
+form>input[type="submit"] {
+    position: relative;
+    margin: 15px;
+    font-size: 16px;
+    padding: 8px;
+    left: 10px;
+}
+.newsLetterForm {
+    position: relative;
+    top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+}
+.newsLetterForm>#newsLetterHeading {
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.newsLetterForm>#newsLetter {
+    margin: 10px;
+}
+.newsLetterForm>input {
+    margin: 10px;
+    padding: 20px;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.policyAgreements {
+    position: inherit;
+}
+#policyAgreement {
+    padding: 15px;
     margin: 10px auto;
-    color: rgb(148, 200, 218);
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-transform: capitalize;
-    text-decoration: dashed; /* also not applied*/
-    text-indent: 0%;
-    width: 15em;
-    background-color: brown;
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
 }
-div.newsLetterForm {
-    text-transform: capitalize;
-    font-family:'Courier New', Courier, monospace;
-    color: blue;
+button {
+    padding: 10px;
+    margin: 10px auto;
+    box-shadow: -3px 3px 0 black;
+    background-color: lightsalmon;
+    color: white;
+    font-size: 16px;
 }
-h2 {
-    color: rgb(97, 173, 231);
-    height: 5em;
-    width:  12em;
-    background-color: rgb(210, 126, 15);
-    align-self : center;
+button:hover {
+    box-shadow: -4px 4px 0 black;
+    border-left: 5px solid black;
+    background-color: rgb(254, 123, 70); 
 }
-*:link {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 110%;
-    color: aqua;
+button:active {
+    box-shadow: -2px 2px 0 black;
+    background-color: rgb(254, 123, 70);
 }
-*:visited {
-    color: darkblue;
-}
-
-a:hover {
-    background-color: rgb(162, 189, 233);
-}
-
-input[type="submit"] {
-    color: blue;
-    background-color: rgba(240, 139, 99, 0.87);
-    font-family: cursive;
-    text-decoration: dashed;
-    text-transform: capitalize;
-}
-input[type*="submit"]:hover{
-    background-color: rgb(62, 207, 188);
-    color: brown;
-    box-shadow: -1px 1px .5px black;
-}
-input[type*="submit"]:active {
-        background-color: rgb(2, 166, 144);
-        color: blue;
-        box-shadow: -3px 3px 1.5px 2px rgb(0, 0, 0);
+#footerParagraph {
+    padding: 10px;
+    margin: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
 }
