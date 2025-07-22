@@ -1,30 +1,70 @@
-.signUpForm {
-    text-transform: capitalize;
-    margin: 10px auto;
-    text-align: left;
-    padding: 10px;
-}
-#signUpForm {
+.mainWrapper {
     position:relative;
     top: 70px;
-    padding: 10px;
+}
+.signUpFormWrapper {
+    text-transform: capitalize;
     margin: 10px auto;
-    background-color: lightgray;
-    width: 500px;
+}
+.header {
+    background-color: #534c4c;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 50;
+    height: 40px;
+    padding: 10px;
+}
+#pageMenu {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 10px;
+    display: flex; /* Make the <li>s line up horizontally */
+    justify-content: center; /* Or 'space-around', 'space-between' */
+    gap: 30px;
+}
+#pageMenu a {
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    color: lightsalmon;
+    font-weight: bold;
     font-size: 16px;
+}
+#pageMenu a:hover {
+    color: #07a9d1; /* GitHub blue hover */
+}
+#signUpForm {
+    border: 3px solid lightsalmon;
+    background-color: lightgray;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    margin: 10px auto;
+    padding: 15px; 
+    width: 500px;
+    border-radius: 40px / 30px;
 }
 #formHeader {
-    font-size: 20px;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
 }
-.signUpForm input {
-    width: 70%;
+#signUpForm input {
+    width: 75%;
     font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    margin: 10px;
+    font-family:'Courier New', Courier, monospace;
+    margin: 5px auto;
     padding: 10px;
+    border: 2px solid lightblue;
+    border-radius: 7% / 35%;
 }
-.signUpForm input[type="date"] {
+#signUpForm label{
+    width: fit-content;
+    text-align: center;
+}
+#signUpForm input[type="date"] {
     width: 50%;
     font-size: 16px;
     font-family: 'Times New Roman', Times, serif;
@@ -33,26 +73,48 @@
 #signUpForm>input[type="checkbox*"] {
     text-align: center;
 }
-#signUpForm>input[type="submit"] {
-    text-align: center;
-    width: 30%;
-    padding: 12px;
+button {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid lightsalmon;
+    border-radius: 20% / 60% ;
+}
+#policyAgreement {
+    width: 500px;
+    margin: 10px auto;
+    padding: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+#policyAgreement label,input,button{
+    margin: 10px;
 }
 .newsLetterForm {
-
+    margin: 5px;
+    padding: 10px;
 }
 #newsLetterHeading {
-
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(41, 170, 170);
+    text-decoration: underline;
 }
-.newsLetterForm label {
-
+.newsLetterForm label,input {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
 }
-.newsLetterForm p {
-
+.newsLetterForm input {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 25%;
+    padding: 10px;
 }
-footer {
-
+.newsLetterForm p,p>a {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: rgb(92, 85, 85);
 }
-footer p {
-
+.newsLetterForm a {
+    color: lightseagreen;
+}
+.newsLetterForm a:hover {
+    color: rgb(20, 134, 134);
 }
