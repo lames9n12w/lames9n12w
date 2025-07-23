@@ -1,6 +1,16 @@
 .mainWrapper {
     position:relative;
-    top: 70px;
+    top: 200px;
+}
+.promptDiv {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(41, 170, 170);
+    font-size: medium;
+    font-weight: bold;
+    width: fit-content;
+    margin: 10px auto;
+    position: relative;
+    top: 150px;
 }
 .signUpFormWrapper {
     text-transform: capitalize;
@@ -17,13 +27,12 @@
     padding: 10px;
 }
 #pageMenu {
-    list-style: none;
-    display: inline-block;
-    margin: 0;
-    padding: 10px;
     display: flex; /* Make the <li>s line up horizontally */
     justify-content: center; /* Or 'space-around', 'space-between' */
-    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    gap: 1rem;
 }
 #pageMenu a {
     text-decoration: none;
@@ -52,20 +61,24 @@
     font-weight: bolder;
 }
 #signUpForm input {
-    width: 75%;
-    font-size: 20px;
+    position: relative;
     font-family:'Courier New', Courier, monospace;
-    margin: 5px auto;
-    padding: 10px;
+    font-size: 16px;
     border: 2px solid lightblue;
-    border-radius: 7% / 35%;
+    border-radius: 5% / 52%;
+    margin: 5px auto;
+    padding: 13px;
+    left: 20px;
+    width: 75%;
 }
-#signUpForm label{
+#signUpForm label {
+    position: relative;
+    left: 25px;
     width: fit-content;
     text-align: center;
 }
 #signUpForm input[type="date"] {
-    width: 50%;
+    width: 40%;
     font-size: 16px;
     font-family: 'Times New Roman', Times, serif;
     margin: 10px;
@@ -76,9 +89,21 @@
 button {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
-    padding: 10px;
+    background-color: lightseagreen;
     border: 1px solid lightsalmon;
-    border-radius: 20% / 60% ;
+    border-radius: 10% / 20% ;
+    color: lightyellow;
+    padding: 10px;
+}
+button:hover {
+    border-width: 3px;
+    border-color: rgb(250, 142, 99);
+    background-color: rgb(19, 143, 137);
+}
+button:active {
+    background-color: lightseagreen;
+    border: 1px solid lightsalmon;
+
 }
 #policyAgreement {
     width: 500px;
